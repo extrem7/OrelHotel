@@ -1,0 +1,170 @@
+.service-item {
+  position: relative;
+  display: flex;
+  min-height: 480px;
+  .photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 50%;
+  }
+  .mobile-photo {
+    display: none;
+  }
+  .content {
+    width: 50%;
+    padding: 0 0 20px;
+  }
+  .service-container {
+    padding: 0 15px;
+    max-width: 585px;
+    float: right;
+  }
+  .title-light {
+    text-align: left;
+  }
+  .title-block {
+    border-color: @gold-light;
+    padding-bottom: 50px;
+    .white-overflow {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .text {
+    margin-bottom: 15px;
+  }
+  .buttons {
+    a {
+      min-width: 230px;
+      &:hover {
+        background-color: darken(@gold, 10%);
+      }
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+    .btn-gold-light {
+      border-color: @gold-light;
+      &:hover {
+        background-color: @gold-light;
+      }
+    }
+  }
+  &-right {
+    .photo {
+      background-position: right;
+    }
+    .content {
+      background-color: @gold;
+    }
+    .service-container {
+      float: left;
+    }
+    .title-light {
+      color: #d7ae81;
+    }
+    .title-block {
+      .white-overflow {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.archive-service {
+  .main {
+    background-image: url("../img/services.png");
+    .container {
+      position: relative;
+    }
+  }
+  .hotel-services {
+    padding-top: 80px;
+  }
+}
+
+.single-service {
+  .main {
+    max-height: 580px;
+  }
+  .row-inputs {
+    .input-control {
+      max-width: 25%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .service-item {
+    .buttons {
+      a {
+        min-width: 200px;
+      }
+    }
+  }
+
+  .single-service {
+    .row-inputs {
+      .input-control {
+        max-width: 23%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .service-item {
+    .photo {
+      width: 40%;
+    }
+    .content {
+      width: 60%;
+    }
+  }
+
+  .single-service {
+    .row-inputs {
+      .input-control {
+        max-width: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    .photo {
+      display: none;
+      width: 100%;
+      height: 45vw;
+      margin-bottom: 20px;
+    }
+    .mobile-photo {
+      display: block;
+    }
+    .content {
+      width: 100%;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        &:first-child {
+          margin: 0 0 15px;
+        }
+      }
+    }
+  }
+
+  .single-service {
+    .row-inputs {
+      .input-control {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@dark-gray: #333333;
+@silver: #666666;
+@red-light: #e3331d;
+@red: #ce2611;
+@gold: #caa276;
+@gold-pink: #e6d4c0;
+@red-dark: #730d00;
+@pink: #ff3e53;
+@brown: #30240e;
+@gray: #707579;
+@light: #f4f8fb;
+@gold-light: #f4e2bc;
+
+@lg: "max-width: 1200px";
+@md: "max-width: 992px";
+@sm: "max-width: 768px";
+@xs: "max-width: 578px";
+
+
+.placeholder(@rules) {
+
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
+}
+
+.fit-content() {
+  width: fit-content;
+  width: intrinsic; /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content; /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+}
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute-center() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide-number-arrows() {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,138 @@
+.header {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  .nav-top {
+    background-color: fade(#1c1507, 85%);
+    padding: 7px 0;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 300;
+    svg, i {
+      color: @gold-pink;
+      font-size: 13px;
+    }
+  }
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    word-break: normal;
+    .active {
+      .size(25px);
+      .border-radius(50%);
+      .flex-center();
+      margin: 0 5px;
+      background-color: @gold;
+      pointer-events: none;
+    }
+  }
+  &-contacts {
+    p {
+      margin: 0 8px;
+    }
+  }
+  .nav-main {
+    background-color: #ffffff;
+  }
+  .logo {
+    margin: 7px 30px;
+  }
+  .toggle-btn {
+    display: none;
+    z-index: 2;
+    background-color: fade(#1c1507, 85%);
+    border: none;
+    outline: 0;
+    position: absolute;
+    padding: 8px;
+    top: ~"calc(100% - 1px)";
+    left: 0;
+    span {
+      display: block;
+      width: 35px;
+      margin-bottom: 4px;
+      height: 4px;
+      background-color: white;
+      border-radius: 32px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    &.active {
+      span {
+        &:first-child {
+          .rotate(135deg);
+          top: 9px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          .rotate(-135deg);
+          bottom: 7px;
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    color: @brown;
+    font-size: 12px;
+    i, svg {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    a {
+      .size(123px, 114px);
+      .flex-center();
+      flex-direction: column;
+      &.active, &:hover {
+        background-color: #c8a87f;
+        color: white;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .menu a {
+      width: 100px;
+    }
+
+    .logo {
+      margin: 7px 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    .menu a {
+      width: 95px;
+    }
+
+    .logo {
+      display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    .language-switcher {
+      display: none;
+    }
+
+    .toggle-btn {
+      display: block;
+    }
+
+    .menu {
+      flex-direction: column;
+      a {
+        width: 100%;
+      }
+    }
+
+    .nav-main {
+      display: none;
+    }
+
+    .nav-menu {
+      width: 50%;
+    }
+  }
+}

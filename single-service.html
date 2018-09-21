@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="single-room-service single-service">
+<div data-include="template-parts/header.html"></div>
+<div class="main" style="background-image: url('img/service-background.png')">
+    <div class="container">
+        <h1 class="main-title">Аренда зала</h1>
+        <h2 class="main-subtitle">Стильное оформление зала</h2>
+    </div>
+</div>
+<div class="breadcrumbs">
+    <div class="container">
+        <a href=""><i class="fas fa-home"></i></a>
+        <span class="breadcrumb-separator">-</span>
+        <a href="">Услуги</a>
+        <span class="breadcrumb-separator">-</span>
+        Аренда зала
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="title-block title-padding">
+            <b>Аренда зала</b>
+            <mark class="white-overflow">в самом центре города</mark>
+        </div>
+        <p class="description">
+            Роскошный интерьер в классическом стиле, украшенный эффектными люстрами и декором 19 века. А гости с
+            удовольствием будут вспоминать время проведённое в наших стенах. Уютная, красивая атмосфера, камин,
+            ковролин, тканевый декор, художественная роспись, система кондиционирования,приятное освещение, удобные
+            кресла, каждая деталь интерьера продумана до мелочей. Доброжелательный персонал тщательно заботится о
+            комфорте гостей участвующих в семинарах и конференциях, проходящих на территории гостинично-ресторанного
+            комплекса "Очарованный Странник". Вам действительно понравится работать с нами!
+        </p>
+        <p class="room-size"><b>Вместимость конференц-зала :</b> до  40 персон</p>
+    </div>
+    <div class="room-advantages">
+        <div class="line d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-4">В конференц зале имеется:</div>
+                    <div class="d-none d-md-block col-md-4">В стоимость аренды входит::</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-block d-md-none pl-2 line">В номере:</div>
+                    <p class="advantage-item"><img src="img/icon-bed.png" alt="">Односпальная кровать</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-block d-md-none pl-2 mt-2 line">В ванной комнате:</div>
+                    <p class="advantage-item"><img src="img/icon-shower.png" alt="">Полный санузел с душевой</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <form class="reservation-room-form custom-form-control">
+            <div class="row-inputs flex-wrap">
+                <label class="input-control">
+                    Ваше имя
+                    <input type="text" placeholder="Андрей">
+                </label>
+                <label class="input-control">
+                    Номер телефона
+                    <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                </label>
+                <label class="input-control">
+                    Пожелания к брони
+                    <input type="text" placeholder="">
+                </label>
+                <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="room-gallery owl-carousel">
+    <div class="item">
+        <img src="img/service-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/service-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/service-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/service-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+</div>
+<div data-include="template-parts/services.html"></div>
+<div data-include="template-parts/footer.html"></div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

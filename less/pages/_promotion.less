@@ -1,0 +1,137 @@
+.archive-promotion, .single-promotion {
+  .main {
+    background-image: url("../img/archive-promotion.png");
+  }
+}
+
+.archive-promotion {
+  .promotion-list {
+    .title-light {
+      margin-bottom: 25px;
+    }
+  }
+  .promotion-item {
+    .size(100%, 290px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 12px 30px 8px 16px;
+      font-size: 12px;
+      color: white;
+      background-color: fade(#000000, 70%);
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+    a {
+      text-decoration: underline;
+      display: block;
+      margin-left: 70px;
+      word-break: keep-all;
+    }
+  }
+  @media (max-width: 1200px) {
+    .promotion-item {
+      .title {
+        font-size: 13px;
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  @media (max-width: 911px) {
+    .promotion-item {
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .title {
+        font-size: 14px;
+      }
+      a {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.single-promotion {
+  .content {
+    padding-bottom: 50px;
+    font-size: 16px;
+    .promotion-title {
+      font-family: Lobster, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      margin: 30px 0;
+    }
+    .main-photo {
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+    }
+    .btn-gold-dark {
+      max-width: 350px;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .other-promotions {
+    padding-bottom: 60px;
+    .other-title {
+      margin: 30px 0 25px;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  .promotion-carousel {
+    padding: 0 50px;
+    .photo {
+      .size(100%, 205px);
+      background-size: cover;
+      margin-bottom: 8px;
+    }
+  p{
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+    .title {
+    }
+    .excerpt{
+      text-transform: uppercase;
+      color: @silver;
+    }
+    .btn-gold{
+      margin-top: 25px;
+    }
+  }
+  @media (max-width: 768px){
+    .content{
+      .promotion-title{
+        font-size: 24px;
+      }
+    }
+    .other-promotions{
+      text-align: center;
+      .other-title{
+        font-size: 24px;
+      }
+      .promotion-carousel{
+        padding: 0;
+      }
+    }
+  }
+}

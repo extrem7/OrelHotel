@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="home">
+<div data-include="template-parts/header.html"></div>
+<div class="main-section">
+    <div class="reservation-container container d-flex justify-content-end">
+        <div class="reservation-form custom-form-control">
+            <p class="title">БРОНИРОВАНИЕ</p>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home">Номера в гостинице</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile">Места в ресторане</a>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home">
+                    <div class="form">
+                        <div class="row-inputs">
+                            <label class="input-control date-block">
+                                Дата прибытия
+                                <input type="date" value="2018-08-12">
+                            </label>
+                            <label class="input-control date-block">
+                                Дата отъезда
+                                <input type="date" value="2018-08-12">
+                            </label>
+                        </div>
+                        <label class="input-control select-control">
+                            Номер
+                            <select>
+                                <option value="">Номер 1-местный (стандарт SGL)</option>
+                                <option value="">Номер 1-местный (стандарт SGL)</option>
+                            </select>
+                        </label>
+                        <div class="row-inputs">
+                            <label class="input-control number-block">
+                                Взрослых
+                                <input type="number" value="1">
+                            </label>
+                            <label class="input-control number-block">
+                                Детей
+                                <input type="number" value="0">
+                            </label>
+                        </div>
+                        <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile">
+                    <div class="form">
+                        <div class="row-inputs flex-wrap">
+                            <label class="input-control date-block">
+                                Дата бронирования
+                                <input type="date" value="2018-08-12">
+                            </label>
+                            <label class="input-control time-block">
+                                Время
+                                <input type="time" value="21:00">
+                            </label>
+                            <label class="input-control number-block">
+                                Сколько человек
+                                <input type="number" value="2">
+                            </label>
+                            <label class="input-control">
+                                Дата прибытия
+                                <input type="text" placeholder="Андрей">
+                            </label>
+                            <label class="input-control">
+                                Дата прибытия
+                                <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                            </label>
+                            <label class="input-control">
+                                Пожелания к брони
+                                <input type="text" placeholder="Столик, зона и т.д.">
+                            </label>
+                        </div>
+                        <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-owl-carousel owl-carousel owl-carousel-common color-line-after">
+        <div class="item" style="background-image: url('img/main-background.png')">
+            <div class="shadow-block"></div>
+        </div>
+        <div class="item"
+             style="background-image: url('https://www.grangehotels.com/media/7691/1-grange-tower-bridge-1920x900.jpg')">
+            <div class="shadow-block"></div>
+        </div>
+        <div class="item"
+             style="background-image: url('https://www.the-yeatman-hotel.com/fotos/imagens_ambiente/mcg_20130524_theyateman_0015_hires_by_mcgunnmedia_33137716858c024872637d.jpg')">
+            <div class="shadow-block"></div>
+        </div>
+        <div class="item"
+             style="background-image: url('https://www.thahara.com/uploads/hotel/2016/06/cover__thahara_1464858507Boutique-hotel-Myanmar-Mandalay.jpg')">
+            <div class="shadow-block"></div>
+        </div>
+    </div>
+</div>
+<section class="hotel-section color-line-after">
+    <h2 class="title-light">Добро пожаловать</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-8">
+                <div class="title-block title-padding">
+                    <b>Гостиница-ресторан</b>
+                    <mark class="white-overflow">«Очарованный странник»</mark>
+                </div>
+                <p class="text">
+                    Вас ждут 14 уютных номеров в самом центре старого Орла, на одной из главных городских улиц, недалеко
+                    от «Дворянского гнезда», драматического театра им. Тургенева и учреждений городской и областной
+                    власти.<br>
+                    <br>
+                    Стиль гостиницы — это провинциальная дворянская усадьба. В окружении старинных лип и в дали от
+                    шумных загруженных городских транспортных артерий Вас ждет крепкий сон, вкусный завтрак с элементами
+                    «шведского стола», возможность поработать в мини-бизнес-центре, поиграть в бильярд.
+                </p>
+                <div class="info d-flex align-items-center">
+                    <div class="info-block">
+                        <i class="fal fa-cloud"></i>
+                        <p><div id="meteoprog_informer_standart" data-params="none:Orel:100x65:white:23x22"><a
+                            href="https://www.meteoprog.ua/ru/"></a></div>C</p>
+                    </div>
+                    <div class="info-block">
+                        <i class="fal fa-clock"></i>
+                        <p id="hotel-clock">16:32</p>
+                    </div>
+                </div>
+                <script src="https://www.meteoprog.ua/ru/weather/informer/standart.js"></script>
+                <a href="" class="btn-gold">Подробнее</a>
+            </div>
+            <div class="photos col-lg-6 col-md-4">
+                <img src="img/hotel-section.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hotel-rooms color-line-after">
+    <div class="container">
+        <h2 class="title-light">Наши номера</h2>
+        <h3 class="section-title text-center text-white mt-3">Номерной фонд гостиницы</h3>
+        <h4 class="subtitle text-center text-white mb-3">«Очарованный странник»</h4>
+        <div class="hotel-room-carousel owl-carousel owl-carousel-common">
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-1.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-2.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-3.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-4.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-1.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-2.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-3.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-4.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-1.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-2.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-3.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-4.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-1.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-2.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-3.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+            <a href="" class="item">
+                <div class="photo" style="background-image: url('img/hotel-slider-4.png')"></div>
+                <div class="padding">
+                    <p class="title">Номер 1-местный (стандарт SGL)</p>
+                    <p class="excerpt">Уютный номер с кондиционером и DVD-плеером.</p>
+                    <p class="price">от 2 950 руб./ сутки</p>
+                    <span class="btn-gold">Подробнее</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<div data-include="template-parts/services.html"></div>
+<div data-include="template-parts/gallery.html"></div>
+<section class="hotel-reviews color-line-after">
+    <div class="container">
+        <h2 class="title-light">Подлинные отзывы</h2>
+        <div class="row">
+            <div class="col-xl-7 col-lg-6">
+                <div class="title-block title-padding">
+                    <b>Отзывы гостей</b>
+                    <mark class="white-overflow">«Очарованный странник»<br>
+                        <span>Настоящие гости. Настоящие поездки. Настоящие мнения.</span></mark>
+                </div>
+                <div class="rate-row">
+                    <div class="rate">8,7</div>
+                    <p class="rate-title">Потрясающе</p>
+                    <p class="count">238 отзывов</p>
+                </div>
+                <div class="rate-lines d-flex justify-content-center justify-content-sm-between flex-wrap">
+                    <div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                        <div class="rate-line">
+                            <p class="title">Чистота</p>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 88%"></div>
+                                </div>
+                                <p class="rate">8,8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <div class="reviews-carousel owl-carousel owl-carousel-common">
+                    <a class="item active" data-review="Текст 1">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-1.png" alt=""></div>
+                        <p class="name">Rita1970</p>
+                    </a>
+                    <a class="item" data-review="Текст 2">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-2.png" alt=""></div>
+                        <p class="name">Elena</p>
+                    </a>
+                    <a class="item" data-review="Текст 3">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-1.png" alt=""></div>
+                        <p class="name">Rita1970</p>
+                    </a>
+                    <a class="item" data-review="Текст 4">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-2.png" alt=""></div>
+                        <p class="name">Elena</p>
+                    </a>
+                    <a class="item" data-review="Текст 5">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-1.png" alt=""></div>
+                        <p class="name">Rita1970</p>
+                    </a>
+                    <a class="item" data-review="Текст 6">
+                        <div class="icon">
+                            <div class="backdrop"></div>
+                            <img src="img/review-2.png" alt=""></div>
+                        <p class="name">Elena</p>
+                    </a>
+                </div>
+                <div class="review-text">
+                    Уютно, комфортно, хорошее расположение, в центре<br> города. Недалеко от пешеходной улицы,<br>
+                    соответственно можно без проблем перекусить и<br> выпить кофе в приличном месте. В номере не<br>
+                    слышно шума
+                    с улицы, есть тапочки, зубная щетка,<br> салфетки для обуви. Удобно, что можно выбрать<br> завтрак
+                    по меню.
+                </div>
+                <a href="" class="btn-gold">Больше отзывов</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div data-include="template-parts/footer.html"></div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="archive-room">
+<div data-include="template-parts/header.html"></div>
+<div class="main">
+    <div class="container">
+        <div class="reservation-form custom-form-control">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home">Номера в гостинице</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile">Места в ресторане</a>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home">
+                    <div class="form">
+                        <div class="row-inputs flex-wrap">
+                            <label class="input-control date-block">
+                                Дата прибытия
+                                <input type="date" value="2018-08-12">
+                            </label>
+                            <label class="input-control date-block">
+                                Дата отъезда
+                                <input type="date" value="2018-08-12">
+                            </label>
+                            <label class="input-control select-control">
+                                Номер
+                                <select>
+                                    <option value="">Номер 1-местный (стандарт SGL)</option>
+                                    <option value="">Номер 1-местный (стандарт SGL)</option>
+                                </select>
+                            </label>
+                            <label class="input-control number-block">
+                                Взрослых
+                                <input type="number" value="1">
+                            </label>
+                            <label class="input-control number-block">
+                                Детей
+                                <input type="number" value="0">
+                            </label>
+                            <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile">
+                    <div class="form">
+                        <div class="row-inputs flex-wrap">
+                            <label class="input-control date-block">
+                                Дата бронирования
+                                <input type="date" value="2018-08-12">
+                            </label>
+                            <label class="input-control time-block">
+                                Время
+                                <input type="time" value="21:00">
+                            </label>
+                            <label class="input-control number-block">
+                                Сколько человек
+                                <input type="number" value="2">
+                            </label>
+                            <label class="input-control">
+                                Ваше имя
+                                <input type="text" placeholder="Андрей">
+                            </label>
+                            <label class="input-control">
+                                Номер телефона
+                                <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                            </label>
+                            <label class="input-control">
+                                Пожелания к брони
+                                <input type="text" placeholder="Столик, зона и т.д.">
+                            </label>
+                            <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="room-list">
+    <h1 class="title-light">Номерной фонд</h1>
+    <div class="room-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <div class="title-block title-padding">
+                        <b>Номер 1-местный</b>
+                        <mark class="white-overflow">Стандарт SGL</mark>
+                    </div>
+                    <p class="excerpt">
+                        Классический номер, выполненный в уютном продуманном интерьере для одноместного размещения. В
+                        каждом
+                        номере имеется спальная зона с удобной односпальной кроватью, удобная рабочая зона; бесплатный
+                        интернет;
+                        TV с дистанционным управлением и возможностью просмотра множества каналов; кондиционер ;
+                        холодильник.
+                        Ванная комната: душевая кабина, фен; фирменный набор туалетных принадлежностей, смена и
+                        пополнение
+                        банных принадлежностей производится ежедневно.
+                    </p>
+                    <p class="price"><i class="fal fa-ruble-sign"></i>от 2 950 руб./ сутки</p>
+                    <div class="room-control">
+                        <a href="" class="btn-gold">БРОНИРОВАТЬ</a>
+                        <a href="" class="btn-gold btn-gold-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main-photo" style="background-image: url('img/room-1.png')"></div>
+                    <div class="room-gallery">
+                        <a href="img/room-1.png" class="active" style="background-image: url('img/room-1.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-2.png" style="background-image: url('img/room-2.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-3.png" style="background-image: url('img/room-3.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-4.png" style="background-image: url('img/room-4.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-5.png" style="background-image: url('img/room-5.png')"><span
+                                class="hover"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="room-item room-item-reverse">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <div class="title-block title-padding">
+                        <b>Номер 2-местный</b>
+                        <mark class="white-overflow">Стандарт DBL</mark>
+                    </div>
+                    <p class="excerpt">
+                        Классический номер, выполненный в уютном продуманном интерьере для одноместного размещения. В
+                        каждом
+                        номере имеется спальная зона с удобной односпальной кроватью, удобная рабочая зона; бесплатный
+                        интернет;
+                        TV с дистанционным управлением и возможностью просмотра множества каналов; кондиционер ;
+                        холодильник.
+                        Ванная комната: душевая кабина, фен; фирменный набор туалетных принадлежностей, смена и
+                        пополнение
+                        банных принадлежностей производится ежедневно.
+                    </p>
+                    <p class="price"><i class="fal fa-ruble-sign"></i>от 2 950 руб./ сутки</p>
+                    <div class="room-control">
+                        <a href="" class="btn-gold">БРОНИРОВАТЬ</a>
+                        <a href="" class="btn-gold btn-gold-light">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main-photo" style="background-image: url('img/room-1.png')"></div>
+                    <div class="room-gallery">
+                        <a href="img/room-1.png" class="active" style="background-image: url('img/room-1.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-2.png" style="background-image: url('img/room-2.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-3.png" style="background-image: url('img/room-3.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-4.png" style="background-image: url('img/room-4.png')"><span
+                                class="hover"></span></a>
+                        <a href="img/room-5.png" style="background-image: url('img/room-5.png')"><span
+                                class="hover"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="template-parts/services.html"></div>
+<div data-include="template-parts/footer.html"></div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

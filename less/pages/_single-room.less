@@ -1,0 +1,434 @@
+.main {
+  max-height: 900px;
+  height: 100vh;
+  background-image: url("../img/single-room.png");
+}
+
+.content {
+  padding: 90px 0 80px;
+  .description {
+    font-size: 16px;
+    margin: 0 0 15px;
+  }
+  .room-size {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .room-advantages {
+    padding-bottom: 40px;
+    .line {
+      background-color: @gold-light;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .advantage-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      svg, i, img {
+        color: @gold;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+  hr {
+    border-top: 2px solid @gold-light;
+  }
+}
+
+.reservation-room-form {
+  .date-block {
+    max-width: 170px;
+  }
+  .number-block {
+    max-width: 100px;
+  }
+  p {
+    margin-bottom: 10px;
+    span {
+      font-size: 18px;
+      display: block;
+    }
+  }
+  .come-in {
+    padding: 0 20px;
+    border-left: 2px solid @gold;
+    border-right: 2px solid @gold;
+  }
+  .additional-services {
+    margin: 30px 0 40px;
+    border-bottom: 2px solid @gold-light;
+    .service {
+      font-weight: 300;
+      align-items: center;
+      margin-bottom: 30px;
+      b {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      &-price {
+        font-weight: 400;
+        padding-left: 18px;
+        border-left: 2px solid @gold;
+      }
+      .select-control {
+        max-width: 230px;
+        font-weight: 400;
+      }
+    }
+  }
+  .reservation-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    .short-review {
+      text-align: right;
+    }
+    .submit {
+      &[disabled] {
+        cursor: not-allowed;
+      }
+    }
+  }
+  .subtotal {
+    margin-right: 20px;
+    text-align: right;
+    span {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  &-next {
+    .reservation-control {
+      margin-bottom: 150px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.payment-form {
+  .form-header {
+    margin: 0 -15px 25px;
+    padding: 15px;
+    background-color: @gold-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .short-review {
+      text-align: right;
+    }
+    .subtotal {
+      text-align: right;
+      span {
+        font-weight: 600;
+        font-size: 24px;
+        display: block;
+      }
+    }
+  }
+  .form-title {
+    font-weight: 700;
+    margin: 25px 0;
+  }
+  .field {
+    background-color: @light;
+    padding: 15px;
+    margin: 0 -15px 8px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .client-field {
+    input {
+      width: 24%;
+    }
+    .select-control {
+      max-width: 24%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .main-field {
+    input {
+      max-width: 290px;
+      margin-right: 8px;
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    input {
+      display: inline-block;
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  .input-control {
+    font-size: 14px;
+  }
+  .come-in-out {
+    display: flex;
+    align-items: center;
+    label {
+      max-width: unset;
+      width: auto;
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      input {
+        width: 150px;
+        margin: 0 0 0 9px;
+      }
+    }
+  }
+  .time-details {
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  .comment-field {
+    margin-bottom: 30px;
+    .input-control {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input {
+      max-width: 700px;
+    }
+  }
+  .personal-field {
+    margin-bottom: 30px;
+  }
+  .payment-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    .make-payment {
+      font-size: 14px;
+      font-weight: 300;
+      b {
+        font-size: 24px;
+        font-weight: 400;
+        display: block;
+      }
+    }
+    .subtotal {
+      margin-right: 20px;
+      text-align: right;
+      span {
+        font-weight: 600;
+        font-size: 24px;
+        display: block;
+      }
+    }
+    .submit {
+      &[disabled] {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.room-gallery {
+  .item {
+    position: relative;
+    .backdrop {
+      position: absolute;
+      .size(100%);
+      top: 0;
+      left: 0;
+      background-color: fade(black, 70%);
+      transition: background-color .75s;
+    }
+  }
+  .center {
+    position: relative;
+    z-index: 2;
+    .backdrop {
+      background-color: transparent;
+    }
+  }
+  .owl-nav:not(.disabled) {
+    color: white;
+    font-size: 54px;
+    top: 0;
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    button {
+      position: absolute;
+      top: ~"calc(50% - 27px)";
+    }
+    .owl-prev {
+      left: 10vw;
+    }
+    .owl-next {
+      right: 10vw;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    .reservation-room-form {
+      .date-block {
+        max-width: 120px;
+      }
+      .number-block {
+        max-width: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    .reservation-room-form {
+      .date-block {
+        max-width: 25%;
+      }
+      .number-block {
+        max-width: 16%;
+      }
+      &-next {
+        .reservation-control {
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .btn-gold-light {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-form {
+    .come-in-out {
+      flex-wrap: wrap;
+      justify-content: center;
+      p {
+        margin-top: 15px;
+      }
+    }
+    .payment-control {
+      flex-direction: column;
+      .make-payment {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    .reservation-room-form {
+      .date-block {
+        max-width: 49%;
+      }
+      .number-block {
+        max-width: 49%;
+      }
+      p {
+        width: 100%;
+        text-align: center;
+      }
+      .reservation-control {
+        flex-direction: column;
+        .subtotal {
+          text-align: center;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .reservation-room-form {
+    &-next {
+      .select-control{
+        margin: 0 auto;
+        display: block;
+      }
+      .service{
+        b{
+          display: block;
+          text-align: center;
+        }
+      }
+      .reservation-control {
+        .short-review {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .payment-form {
+    .form-header {
+      flex-direction: column;
+      .short-review {
+        text-align: center;
+        margin: 15px 0;
+      }
+    }
+
+    .main-field {
+      .input-control {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+    }
+    .field {
+      .row-inputs {
+        flex-wrap: wrap;
+        input {
+          width: 100%;
+          margin-top: 10px;
+        }
+        .select-control {
+          max-width: 100%;
+        }
+      }
+    }
+    .come-in-out {
+      flex-direction: column;
+      text-align: center;
+      .time-block {
+        margin-bottom: 10px;
+      }
+    }
+    .comment-field .input-control {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    .payment-control {
+      .make-payment {
+        b {
+          font-size: 20px;
+        }
+      }
+      .submit {
+        margin-top: 15px;
+      }
+    }
+  }
+}

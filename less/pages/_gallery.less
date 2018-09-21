@@ -1,0 +1,69 @@
+.main {
+  background-image: url("../img/gallery.png");
+  &-title {
+    font-size: 60px;
+    span {
+      display: block;
+      font-size: 100px;
+    }
+  }
+}
+
+.content {
+  .text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .gallery {
+    padding: 40px 0 80px;
+    .btn-gold {
+      max-width: 400px;
+      width: 100%;
+      padding: 18px 0;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main{
+    &-title{
+      span{
+        font-size: 76px;
+      }
+    }
+  }
+  .content{
+    .title-block{
+      mark{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main{
+    &-title{
+      span{
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main{
+    &-title{
+      font-size: 40px;
+      span{
+        font-size: 40px;
+      }
+    }
+  }
+  .content{
+    .title-block{
+      line-height: 24px;
+    }
+  }
+}

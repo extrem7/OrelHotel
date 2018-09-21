@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="single-room-service single-room">
+<div data-include="template-parts/header.html"></div>
+<div class="main">
+    <div class="container">
+        <h1 class="main-title">Номер 1-местный</h1>
+        <h2 class="main-subtitle">Стандарт SGL</h2>
+    </div>
+</div>
+<div class="breadcrumbs">
+    <div class="container">
+        <a href=""><i class="fas fa-home"></i></a>
+        <span class="breadcrumb-separator">-</span>
+        <a href="">Номера</a>
+        <span class="breadcrumb-separator">-</span>
+        Номер одноместный стандарт SGL
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="title-block title-padding">
+            <b>Номер 1-местный</b>
+            <mark class="white-overflow">Стандарт SGL</mark>
+        </div>
+        <p class="description">
+            Классический номер, выполненный в уютном продуманном интерьере для одноместного размещения. В каждом номере
+            имеется спальная зона с удобной односпальной кроватью, удобная рабочая зона; бесплатный интернет; TV с
+            дистанционным управлением и возможностью просмотра множества каналов; кондиционер ; холодильник. Ванная
+            комната:
+            душевая кабина, фен; фирменный набор туалетных принадлежностей, смена и пополнение банных принадлежностей
+            производится ежедневно. Эксклюзивная особенность номера в том, что ванная комната отделена от жилой зоны
+            стеклянной перегородкой, что добавляет особенную роскошь интерьеру. В стоимость проживания входит завтрак
+            «Шведский стол»
+        </p>
+        <p class="room-size"><b>Вместимость:</b> до 1 гостя (площадь до 15 кв м.)</p>
+    </div>
+    <div class="room-advantages">
+        <div class="line d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-4">В номере:</div>
+                    <div class="d-none d-md-block col-md-4">В ванной комнате:</div>
+                    <div class="d-none d-md-block col-md-4">В стоимость номера входит:</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-block d-md-none pl-2 line">В номере:</div>
+                    <p class="advantage-item"><img src="img/icon-bed.png" alt="">Односпальная кровать</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-block d-md-none pl-2 mt-2 line">В ванной комнате:</div>
+                    <p class="advantage-item"><img src="img/icon-shower.png" alt="">Полный санузел с душевой</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-block d-md-none pl-2 mt-2 line">В стоимость номера входит:</div>
+                    <p class="advantage-item"><i
+                            class="fal fa-check-circle"></i>Проживание в номере желаемой категории</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <script>
+            let price = 2950;
+        </script>
+        <form class="reservation-room-form custom-form-control" id="room-reserv-form-plain">
+            <div class="row-inputs flex-wrap">
+                <label class="input-control date-block" :class="{error:!days}">
+                    Дата прибытия
+                    <input type="date" v-model="startDate">
+                </label>
+                <label class="input-control date-block" :class="{error:!days}">
+                    Дата отъезда
+                    <input type="date" v-model="endDate">
+                </label>
+                <label class="input-control number-block" :class="{error:(adults % 1)}">
+                    Взрослых
+                    <input type="number" min="0" value="1" v-model.number="adults">
+                </label>
+                <label class="input-control number-block" :class="{error:(adults % 1)}">
+                    Детей
+                    <input type="number" min="0" value="0" v-model.number="children">
+                </label>
+                <p class="price">Стоимость за 1 ночь:{{days}}<span>2 950 руб.</span></p>
+                <p class="come-in">Пребывание:<span>{{startDate | date}} - {{endDate | date}}</span></p>
+                <p class="come-out">Гостей:<span>{{adults}} взросл. {{children}} дет.</span></p>
+            </div>
+            <div class="reservation-control">
+                <p class="subtotal">Общая стоимость:<span>{{subtotal}} руб.</span></p>
+                <button class="submit">ЗАБРОНИРОВАТЬ</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="room-gallery owl-carousel">
+    <div class="item">
+        <img src="img/room-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/room-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/room-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+    <div class="item">
+        <img src="img/room-gallery.png" alt="">
+        <div class="backdrop"></div>
+    </div>
+</div>
+<div data-include="template-parts/services.html"></div>
+<div data-include="template-parts/footer.html"></div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+<script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

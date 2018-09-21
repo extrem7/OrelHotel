@@ -1,0 +1,69 @@
+<div class="reservation-form custom-form-control">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home">Номера в гостинице</a>
+        <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile">Места в ресторане</a>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home">
+            <div class="form">
+                <div class="row-inputs flex-wrap">
+                    <label class="input-control date-block">
+                        Дата прибытия
+                        <input type="date" value="2018-08-12">
+                    </label>
+                    <label class="input-control date-block">
+                        Дата отъезда
+                        <input type="date" value="2018-08-12">
+                    </label>
+                    <label class="input-control select-control">
+                        Номер
+                        <select>
+                            <option value="">Номер 1-местный (стандарт SGL)</option>
+                            <option value="">Номер 1-местный (стандарт SGL)</option>
+                        </select>
+                    </label>
+                    <label class="input-control number-block">
+                        Взрослых
+                        <input type="number" value="1">
+                    </label>
+                    <label class="input-control number-block">
+                        Детей
+                        <input type="number" value="0">
+                    </label>
+                    <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile">
+            <div class="form">
+                <div class="row-inputs flex-wrap">
+                    <label class="input-control date-block">
+                        Дата бронирования
+                        <input type="date" value="2018-08-12">
+                    </label>
+                    <label class="input-control time-block">
+                        Время
+                        <input type="time" value="21:00">
+                    </label>
+                    <label class="input-control number-block">
+                        Сколько человек
+                        <input type="number" value="2">
+                    </label>
+                    <label class="input-control">
+                        Ваше имя
+                        <input type="text" placeholder="Андрей">
+                    </label>
+                    <label class="input-control">
+                        Номер телефона
+                        <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                    </label>
+                    <label class="input-control">
+                        Пожелания к брони
+                        <input type="text" placeholder="Столик, зона и т.д.">
+                    </label>
+                    <input type="submit" class="btn-gold submit" value="ЗАБРОНИРОВАТЬ">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
